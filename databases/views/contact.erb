@@ -1,0 +1,11 @@
+<h1>Hello from contacts/<%= @contact['first_name'] %>
+</h1>
+<p><%= @contact['age'] %></p>
+
+<form action="/delete" method="post">
+  <button>Delete Contact</button>
+</form>
+
+<a href ="/contacts/<%= @contact['first_name'] %>/edit"> Edit contact<a/>
+
+

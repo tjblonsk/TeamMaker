@@ -1,0 +1,12 @@
+<h1>Edit task</h1>
+
+<form action="/list/update" method="post">
+  <label for="name">Update Name</label><br>
+  <input type="text" name="name" value="<%= @name %>" autofocus='true'><br>
+  <label for="approx_hrs">Update Hours</label><br>
+  <input type="number" name="approx_hrs"><br>
+  <label for="complete">Task complete?</label><br>
+  <input type="boolean" name="complete"><br>
+  <button>Update task</button>
+</form>
+

@@ -1,0 +1,11 @@
+<h1>Let's edit a contact</h1>
+
+<form action="/contacts" method="post">
+  <label for="first_name">First Name</label><br>
+  <input type="text" name="first_name" value="<%= @contact['first'] %>"><br>
+  <label for="last_name">Last Name</label><br>
+  <input type="text" name="last_name"><br>
+  <label for="age">AGE</label><br>
+  <input type="text" name="age"><br>
+  <button>edit contact</button><br>
+</form>

@@ -1,0 +1,9 @@
+<form action="/list/<%= @task['name'] %>" method="post">
+  <label for="name">Task Name</label><br>
+  <input type="text" name="name" value="<%= @task['name'] %>" autofocus='true'><br>
+  <label for="approx_hrs">Hours to complete</label><br>
+  <input type="number" name="approx_hrs" placeholder="hours" value="<%= @task['approx_hrs'] %>"><br>
+  <label for="complete">Complete?</label><br>
+  <input type="boolean" name="complete" autofocus="true" value="<%= @tast['complete'] %>"><br>
+  <button>Update Task</button>
+</form>

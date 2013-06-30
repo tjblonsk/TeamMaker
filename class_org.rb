@@ -4,9 +4,13 @@ puts "Enter team size:"
 team_size = gets.chomp.to_i
 
 while group.length != 0
-group.shuffle!
-x = group.pop(team_size)
+group.shuffle
+x = group.pop(team_size).join(', ')
+  # if x != team_size do |add_to_last|
+  #    puts x + "add_to_last"
+  # end
 puts "#{x}"
+puts
 end
 
 

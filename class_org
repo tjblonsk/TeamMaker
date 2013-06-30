@@ -1,0 +1,5 @@
+class = [Tim, Wes, Eric, Zack, Teddy, Elana]
+
+class.sample(2) do |x|
+  x.reject!
+end

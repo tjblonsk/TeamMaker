@@ -24,7 +24,7 @@ class Client
   end
 
   def to_s
-    puts "#{name} is #{age}, #{gender}, has #{kids} kids and #{number_of_pets} pets."
+    "#{name} is #{age}, #{gender}, has #{kids} kids and #{number_of_pets} pets."
   end
 
 
@@ -45,7 +45,7 @@ class Animal
   end
 
   def to_s
-    puts "#{@name} is a #{@gender} #{@breed} #{@type}, age #{@age} and has a #{@toys}."
+     "#{@name} is a #{@gender} #{@breed} #{@type}, age #{@age} and has a #{@toys}."
   end
 end
 
@@ -62,7 +62,7 @@ happitails.client_list[:c3] = Client.new("David", 20, "male", 0, 1)
 happitails.client_list[:c4] = Client.new("Stephanie", 30, "female", 0, 3)
 
 puts "The animals to adopt are:"
-happitails.adoptable_animals.each {|x, animal| puts animal }
+happitails.adoptable_animals.each {|key, value| puts value }
 puts
 puts "The clients are:"
 happitails.client_list.each {|x, client| puts client}
