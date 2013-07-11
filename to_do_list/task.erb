@@ -1,0 +1,11 @@
+<h1>Do it! - <%= @descriptions['name'] %></h1>
+
+<ul>
+ <% @descriptions.each do |task, desc| %>
+    <li><%= task %>,  <%= desc %></li>
+  <% end %>
+    <br>
+    <li><a href="/list/<%= @descriptions['name'] %>/edit">Edit Task</a></li>
+<ul>
+
+

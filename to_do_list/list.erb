@@ -1,0 +1,20 @@
+<h1>To do List</h1>
+
+<ul>
+  <% @tasks.each do |task| %>
+  <li>
+    <a href="/list/<%= task['name'] %>">
+    <%= task['name'] %></a>
+    <% end %>
+  </li>
+  <br>
+  <li><a href="/list/new">Add Task</a></li>
+</ul>
+<br>
+
+<form action="/list/delete" method="post">
+  <label for="name">Delete Task</label><br>
+  <input type="text" name="name"><br>
+   <button>Delete task</button>
+</form>
+
