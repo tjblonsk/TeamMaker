@@ -3,7 +3,7 @@ require 'sinatra/reloader' if development?
 require 'pg'
 require 'pry'
 require 'rainbow'
-
+require 'sinatra/activerecord'
 
 def run_sql(sql)
   db = PG.connect(:dbname => 'sinatra_address_book', :host => 'localhost')

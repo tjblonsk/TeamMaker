@@ -2,11 +2,15 @@ Moviesz::Application.routes.draw do
 
 root :to => 'movies#index'
 
+post '/movies' => 'movies#create'
+
 get '/movies' => 'movies#movies'
 
-get '/movies/:id' => 'movies#show', as: 'show_movie'
+get '/movies/display/:id' => 'movies#display'
 
-post '/movies' => 'movies#create'
+get '/movies/:id' => 'movies#show'
+
+
 
 #resources :movies
 
@@ -18,4 +22,8 @@ post '/movies' => 'movies#create'
 #            PATCH  /movies/:id(.:format)      movies#update
 #            PUT    /movies/:id(.:format)      movies#update
 #            DELETE /movies/:id(.:format)      movies#destroy
+
+
+####ACTORS
+get '/actors' => 'actors#show'
 end

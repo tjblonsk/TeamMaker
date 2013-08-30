@@ -1,0 +1,35 @@
+// Pure JS //
+var url= 'http....'
+var request = new XMLHttpRequest();
+request.open('get', url, true);
+request.send(null);
+request.readyState;
+request.responseText;
+
+
+/////////////
+
+// jQuery way //
+$.ajax(request)  //request an object
+
+$.ajax({
+  type: 'get',
+  url: 'http:...'
+}).done(function(data){
+  console.log("i'm done.");
+  console.log(data);
+})
+
+$.ajax({
+  type: 'get',
+  url: 'http:...'
+}).fail(function(data){
+  console.log("i've failed.");
+  console.log(data.errorText);
+}).always(function(data){
+  console.log("i always run");
+})
+
+
+
+.always();

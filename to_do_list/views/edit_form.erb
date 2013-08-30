@@ -1,5 +1,6 @@
 <h1>Edit task</h1>
 
+<div>
 <form action="/list/update" method="post">
   <label for="name">Update Name</label><br>
   <input type="text" name="name" value="<%= @name %>" autofocus='true'><br>
@@ -9,4 +10,4 @@
   <input type="boolean" name="complete"><br>
   <button>Update task</button>
 </form>
-
+</div>

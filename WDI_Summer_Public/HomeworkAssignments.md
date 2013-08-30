@@ -1,4 +1,111 @@
-# Homework Assignmetns
+# Homework Assignments
+
+## Assigned and resources 07/26/2013
+* Chris's [underscore](https://github.com/tibbon/WDI_Summer_Public/blob/master/examples/underscore_functions/js/underscore_intro.js) notes.
+* [FizzBuzz](https://github.com/tibbon/WDI_Summer_Public/tree/master/assignments/fizzbuzz)
+* Resources (reading)
+  * [jQuery Fundamentals](http://jqfundamentals.com/) - Required
+  * [John Resig's Blog](http://ejohn.org/category/blog/) - Optional
+    * [Javascript as a first language](http://ejohn.org/blog/javascript-as-a-first-language/) - optional
+    * [ECMAScript Strict Mode, JSON and More](http://ejohn.org/blog/ecmascript-5-strict-mode-json-and-more/) - optional
+    * [ECMAScript 5 Objects and Properties](http://ejohn.org/blog/ecmascript-5-objects-and-properties/) - optional
+  * [jQuery Codecadmy](http://www.codecademy.com/tracks/jquery) - Required: Introducing jQuery exercises
+  * [jQuery Wikipedia](http://en.wikipedia.org/wiki/JQuery) - Required
+
+## Assigned and Resources 07/25/2013
+* Homework: [MTA lab underscore](https://github.com/phlco/mta_underscore)
+* Resources
+ * [Closure example](https://github.com/tibbon/WDI_Summer_Public/tree/master/examples/js_closures)
+ * [MTA with closures](https://gist.github.com/phlco/6080705)
+ * Read through some of the underscore [annotated source](http://underscorejs.org/docs/underscore.html)
+    * This will increase your understanding of both underscore and javascript!
+
+## Assigned and Resources 07/24/2013
+* [Carousel Lab](https://github.com/phlco/img_carousel_js)
+* Resources
+ * [SO on adding event handlers](http://stackoverflow.com/questions/15564029/adding-to-window-onload-event)
+* *Read* about Closures for tomorrow
+ * [Wikipedia on Closures](http://en.wikipedia.org/wiki/Closure_(computer_science\))
+ * [SO on Javascript Closures](http://stackoverflow.com/questions/111102/how-do-javascript-closures-work)
+
+## Assigned and Resources 07/23/2012
+* [ATM](https://github.com/clearf/javascript_atm) Homework
+* Readings
+ * Look at this beautiful [DOM](http://www.w3schools.com/htmldom/) picture
+  * Draw a similar one for the homework
+ * [Javascript and the DOM](https://developer.apple.com/library/mac/#documentation/AppleApplications/Conceptual/SafariJSProgTopics/Concepts/AboutJavaScript.html#//apple_ref/doc/uid/30001231-BAJGJJAH)
+ * [Using the DOM from Javascript](https://developer.apple.com/library/mac/#documentation/AppleApplications/Conceptual/SafariJSProgTopics/Tasks/DOM.html#//apple_ref/doc/uid/30001237-BAJGJJAH)
+
+* Resources
+ * Chris's [DOM intro](https://github.com/tibbon/WDI_Summer_Public/tree/master/examples/dom_intro) 
+
+## Assigned and Resources 07/22/2013
+* In class resources
+ * Phil's [JS fiddle](http://jsfiddle.net/kxZkb/) from this morning.
+ * Phil's [other JS notes](https://github.com/tibbon/WDI_Summer_Public/tree/master/examples/intro_to_js)
+* *Homework* [lab/homework](https://github.com/tibbon/javascript-geometry-function-hw-lab), due 9:00 tomorrow.
+* Readings
+  * Read [Basic Javascript for the impatient programmer](http://www.2ality.com/2013/06/basic-javascript.html) sections 1-10, 15 and 17. 
+  * Watch [JavaScript: The Good Parts](http://www.youtube.com/watch?v=hQVTIJBZook)
+  * Look over various style guides in preparation for discussion on how they are similar/different
+      * [Airbnb](https://github.com/airbnb/javascript)
+      * [Crockford](http://javascript.crockford.com/code.html)
+      * [jQuery](http://contribute.jquery.org/style-guide/js/)
+      * [Node](https://npmjs.org/doc/coding-style.html)
+
+## Resources 07/16/2013
+* [Basic Login Example](https://github.com/tibbon/auth_from_scratch/)
+
+## Resources 07/16/2013
+* [Hogwortz Example](https://github.com/phlco/hogwartz)
+
+## Assigned 07/12/2013
+* Wireframe your project and concetually develop your models 
+
+## Assigned 07/10/2013
+* [Movie/Actor Homework](https://github.com/clearf/private-imdb).  
+ * instructions on the process for forking, pushing your local repo to the forked repo, and doing a pull request are [here](https://github.com/clearf/private-imdb/blob/master/README.md)
+* Resources
+ * Read about [partials](http://guides.rubyonrails.org/v3.2.13/layouts_and_rendering.html#using-partials)
+ * Extensions of the "todo" app that we did in class
+ [code](https://github.com/tibbon/WDI_Summer_Public/tree/master/examples/rails-todo-with-contacts/todo_app)
+ and [commits](https://github.com/tibbon/WDI_Summer_Public/commits/master). Commits will help you see specific changes!
+
+## Assigned 07/09/2013
+* Fork and complete the new [rails todo](https://github.com/clearf/rails-todo-with-contacts/). 
+* Follow [these instructions](https://gist.github.com/clearf/5961089) to point your homework from yesterday to your fork of the new repo
+* Do reading from yesterday if you didn't do that yet. 
+
+## Assigned 07/08/2013
+* Fork and complete the [rails-todo](https://github.com/phlco/rails_todo) Homework. Use a pull request to turn in when done. 
+* Read the [Rails README](https://github.com/tibbon/WDI_Summer_Public/blob/master/examples/rails/calculator/README.rdoc#description-of-contents)
+* Resources
+  * [Calc app](https://github.com/tibbon/WDI_Summer_Public/tree/master/examples/rails/calculator)
+  * [Dawgs app](https://github.com/tibbon/WDI_Summer_Public/tree/master/examples/rails/dawgs)
+
+
+## Assigned 07/05/2013
+* Catch up on all your old homework assignment. This is very important. For many of you, we need to see pull requests on a much higher % of your homework!
+* Read the [Ruby Style Guide]() and go back and apply it to your old projects, making sure tabs are there, 
+variable names are descriptive, etc. 
+
+## Assigned 07/03/2013
+* [Sunlight](https://github.com/phlco/sunlight)
+
+## Assigned 07/02/2013
+* Submit pull request by 09:00 tomorrow morning for the
+  [Active Record Movie Production Homework](https://github.com/clearf/sinatra-movie-production-active-record/)
+* Resources from today
+  *  [In-class homework review](https://github.com/clearf/sinatra-movie-production/tree/code-example)
+
+## Assigned 07/01/2013
+* Submit pull request by 09:00 tomorrow morning
+* [Movie Production Homework](https://github.com/clearf/sinatra-movie-production/)
+* Skim the [CSS References here](https://github.com/tibbon/WDI_Summer_Public/blob/master/links.md#css-reading)
+* Repos from today:
+ * https://github.com/tibbon/game_of_thrones_sinatra
+ * https://github.com/clearf/sinatra-to-do-homework/tree/code-example
+ * https://github.com/tibbon/html_css_walkthrough
 
 ## Assigned 06/28/2013
 * Please submit your pull request by the end of day on Sunday, June 30th.

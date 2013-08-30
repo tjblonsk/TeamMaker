@@ -1,0 +1,8 @@
+<h1>What up <%= @dog %></h1>
+
+<a href="/dogs/<%= @dog.id %>/edit">Edit Dog</a>
+
+<form action="/dogs/<%= @dog.id %>/" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <button>Delete Dog</button>
+</form>

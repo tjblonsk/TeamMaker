@@ -1,0 +1,7 @@
+<h1>Hello from dogs index</h1>
+<% @dogs.each do |dog| %>
+  <a href="/dogs/<%= dog.id %>">
+    <%= dog.name %></a>
+  <% end %>
+
+<a href="/create">Create</a>

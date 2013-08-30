@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <a href="/">Home</a>
+  <a href="/about">About</a>
+  <a href="/calculator">Calculator</a>
+<%= yield %>
+
+</body>
+</html>

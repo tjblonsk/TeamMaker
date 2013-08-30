@@ -1,0 +1,14 @@
+h1 { color: red;
+    font-family: sans-serif;
+    background-color: black;
+}
+
+body {line-height: 1.62;
+      color: red;
+}
+
+span {color:blue;}
+
+li {
+  font-family: sans-serif;
+}

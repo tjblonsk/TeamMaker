@@ -2,7 +2,7 @@
 
 <ul>
  <% @descriptions.each do |task, desc| %>
-    <li><%= task %>,  <%= desc %></li>
+    <span><li><%= task %>,  <%= desc %></li></span>
   <% end %>
     <br>
     <li><a href="/list/<%= @descriptions['name'] %>/edit">Edit Task</a></li>

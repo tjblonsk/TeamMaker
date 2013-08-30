@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>puppies!</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://puppygifs.tumblr.com/api/read/json"></script>
+  <script>
+
+    $(function(){
+      $('body').append('<div id="main"></div>');
+
+      for(var i = 0; i < tumblr_api_read.posts.length; i++) {
+
+
+        var puppy = tumblr_api_read.posts[i]['photo-url-75'];
+
+        $('#main').append('<img src=' + puppy + '>');
+      }
+    });
+
+    var request = new XMLHttpRequest();
+    var url = "http://www.omdbapi.com/?t=True%20Grit&y=1969";
+    request.open('get', url, false);
+
+
+  </script>
+</head>
+<body>
+  <h1>puppies 4eva</h1>
+</body>
+</html>

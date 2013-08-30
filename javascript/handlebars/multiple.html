@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Whatever</title>
+  <script src="handlebars.js" language="javascript"></script>
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script id="post-template" type="text/x-handlebars-template">
+      {{#each posts}}
+    <div>
+      <h1>{{title}}</h1>
+      <h4>{{date}}</h4>
+      <p>{{body}}</p>
+      {{#if author}}
+          //without helper
+          <h2>By{{author.first_name}} {{author.last_name}}</h2>
+          //with helper
+                {{fullname author.first_name author.last_name}}
+        <h2>Author Unknown</h2>
+      {{/if}}
+
+      {{#each comments}}
+        <p>{{body}}</p>
+      {{else}}
+        <p>No comments</p>
+      {{/each}}
+   </div>
+    {{/each}}
+
+  </script>
+</head>
+<body>
+  <h1>test<h1>
+
+
+
+
+  <script>
+
+    //like helpers in rails, you can reformat text with a helper
+    Handlebars.registerHelper('fullname', function(first_name, last_name){
+      return first_name + " " + last_name;
+    });
+
+
+    //using AJAX request to get the data live from our serve
+   $.ajax({
+      url: 'http://localhost:3000/posts.json',
+      dataType: 'json',
+      type: 'get'
+    }).done(function(data){
+      var source = $('#post-template').html();
+      var template = Handlebars.compile(source);
+      $('body').append(template(data));
+    });
+
+
+
+    $(window).scroll(function() {
+        // Cache our jQuery selector for window
+        var win = $(window);
+
+        // Infinite scroll math!
+        if(win.height() + win.scrollTop() >= $(document).height()) {
+            alert("at the bottom");
+        }
+    });
+
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Whatever</title>
+  <script src="handlebars.js" language="javascript"></script>
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script id="post-template" type="text/x-handlebars-template">
+    <div>
+      <h1>{{title}}</h1>
+      <h4>{{date}}</h4>
+      <p>{{body}}</p>
+      {{#if author}}
+          //without helper
+          <h2>By{{author.first_name}} {{author.last_name}}</h2>
+          //with helper
+                {{fullname author.first_name author.last_name}}
+        <h2>Author Unknown</h2>
+      {{/if}}
+
+      {{#each comments}}
+        <p>{{body}}</p>
+      {{else}}
+        <p>No comments</p>
+      {{/each}}
+
+
+    </div>
+  </script>
+</head>
+<body>
+  <h1>test<h1>
+
+
+
+
+  <script>
+
+    //like helpers in rails, you can reformat text with a helper
+    Handlebars.registerHelper('fullname', function(first_name, last_name){
+      return first_name + " " + last_name;
+    });
+
+
+
+    $(window).scroll(function() {
+        // Cache our jQuery selector for window
+        var win = $(window);
+
+        // Infinite scroll math!
+        if(win.height() + win.scrollTop() >= $(document).height()) {
+            PostScroll.getPost();
+        }
+    });
+
+
+        var PostScroll = {
+          current_post: 1,
+          getPost: function(){
+            if (PostScroll.current_post > 0) {
+          $.ajax({
+             url: 'http://localhost:3000/posts/' + PostScroll.current_post + '.json',
+             dataType: 'json',
+             type: 'get'
+          }).done(function(data){
+              var source = $('#post-template').html();
+              var template = Handlebars.compile(source);
+              PostScroll.current_post += 1;
+              $('body').append(template(data));
+          }).fail(function(request, status, error){
+            PostScroll.current_post = 0;
+            console.log(error);
+          });
+        }
+      }
+    }
+
+
+
+
+
+
+    // var post = {
+    //     title: "first handlebar template",
+    //     date: "today",
+    //     body: "lorem ipsum"
+    // }
+
+
+    // //selects teh template HTML inside the script tag
+    // var source = $('#post-template').html();
+
+    // //complies into a handlebars template
+    // var template = Handlebars.compile(source);
+
+    // //inserts data into the Handlebars template
+    // var templatedHTML = template(post);
+
+    // $('body').append(templatedHTML);
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<h1><%= @faves.name %></h1>
+
+<% @faves.each do |fave| %>
+ <ul>
+      <li><%= fave.plot %></li>
+      <li><%= fave.mpaa %></li>
+      <li>Rating:<%= fave.rating %></li>
+    </ul>
+  <% end %>

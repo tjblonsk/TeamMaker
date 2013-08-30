@@ -1,0 +1,29 @@
+<ul>
+<% @movies.each do |movie| %>
+  <li>
+  <a href="/movies/display/<%= movie.id %>"><%= movie.title %></a>   <% end %>
+</li>
+</ul>
+
+
+from movies.html
+<ul>
+<% @movies.each do |movie| %>
+  <li>
+  <a href="/movies/<%= movie.id %>"><%= movie.title %></a>   <% end %>
+</li>
+</ul>
+
+show.html
+<h1><%= @movie.title %><h1>
+
+<ul>
+  <li><%= @movie.plot %></li>
+  <li><%= @movie.mpaa_rating %></li>
+    <ul>
+
+        <%= @movie.actors.each do |actor| %>
+        <li> <%= actor %></li>
+      <% end %>
+    </ul>
+</ul>
